@@ -142,4 +142,4 @@ plot<- ggplot(Interval2, aes(x =interval , y=avg_steps2, color=weektype)) +
 print(plot)
 ```
 
-#####Answer: Yes there are some differences. During weekdays activity is greatest in the morning, however overall there is more activity on weekends than weekdays. 
+#####Answer: Yes there are some differences. During weekdays activity is greatest in the morning, however overall there is more activity on weekends than weekdays.  
