@@ -36,6 +36,7 @@ ggplot(Total_Steps, aes(x = total_steps)) +
     geom_histogram(fill = "blue", binwidth = 1000) +
     labs(title = "Daily Steps", x = "Total Steps", y = "Frequency")
 ```
+![](Rplot1.png)
 
 ##### 3. Calculate and report the mean and median of the total number of steps taken per day:
 ```{r}
@@ -61,6 +62,7 @@ ggplot(Interval, aes(x =interval , y=avg_steps)) +
     geom_line(color="blue", size=1) +
     labs(title = "Avg. Daily Steps", x = "Interval", y = "Avg. Steps per day")
 ```
+![](Plot2.png)
 
 ##### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r}
@@ -105,6 +107,7 @@ ggplot(Total_Steps2, aes(x = total_steps)) +
     geom_histogram(fill = "blue", binwidth = 1000) +
     labs(title = "Daily Steps including Missing values", x = "Interval", y = "No. of Steps")
 ```
+![](Plot3.png)
 
 ##### 4.2 Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 ```{r}
@@ -141,5 +144,6 @@ plot<- ggplot(Interval2, aes(x =interval , y=avg_steps2, color=weektype)) +
     facet_wrap(~weektype, ncol = 1, nrow=2)
 print(plot)
 ```
+![](Plot4.png)
 
 #####Answer: Yes there are some differences. During weekdays activity is greatest in the morning, however overall there is more activity on weekends than weekdays. 
